@@ -84,7 +84,7 @@ class Component extends DCLogic {
     this.f = setTimeout(() => this.setState({ reason: r, fade: false }), 450);
   };
   renderVals() {
-    const { H, now } = this.state, start = new Date(this.props.startDate ?? '2024-06-21T15:30');
+    const { H, now } = this.state, start = new Date(this.props.startDate ?? '2024-05-21T15:30');
     const d = Math.max(0, now - start), particles = this.props.particles ?? true;
     if (H && (!this._bq)) this._bq = H.Bouquet(React, P, e => this.tap(e));
     if (H && this._pk !== particles) { this._pk = particles; this._bd = H.Backdrop(React, KIND, P, particles); }
